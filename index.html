@@ -1,0 +1,588 @@
+<html>
+<head>
+     <title>Tourism Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+
+<style>
+    *{
+            margin:0;
+            padding:0;
+}
+body
+{
+           background-color:#f1f3f4;
+           font-family:sans-serif;
+}
+.top-nav-bar
+{
+           height:57px;
+           top:0;
+           position:sticky;
+           background:#fff;
+           margin-bottom:20px;
+           border-bottom:3px solid orange;
+           z-index:2;
+}
+.logo
+{
+           height:50px; 
+           margin:5px 10px;
+}
+.menu-bar
+{
+     width: 40%;
+     height: 57px;
+     float:right;
+}
+.menu-bar ul
+{
+     display:inline-flex;
+     float:right;
+}
+.menu-bar ul li
+{
+     border-left: 1px solid #fff;
+     list-style-type:none;
+     padding:15px 35px;
+     text-align:center;
+     background-color: #00b3b3;
+     cursor:pointer;
+}
+.menu-bar ul li a
+{
+     font-size:16px;
+     font-weight:bold;
+     color:#fff;
+     text-decoration:none;
+}
+.menu-bar ul li a:hover{
+    background-color: #004d4d;
+}
+.fa-shopping-basket
+{
+     margin-right:5px;
+}
+@media only screen and (max-width:980px)
+{
+  .top-nav-bar
+  {
+       height:118px;
+       border-bottom:0px;
+}
+.logo
+{
+           height:30px; 
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+}
+.menu-bar
+{
+     width:100%;
+           margin-left: auto;
+           margin-right: auto;
+}
+.menu-bar ul
+{
+     margin:10px  0;
+     width:100%;
+}
+.menu-bar ul li
+{
+     height:57px;
+     width:100%;
+}
+.menu-bar ul li a
+{
+     font-size:10px;
+     font-weight:bold;
+     color:#fff;
+     text-decoration:none;
+}
+}
+/*----------------------slider css--------------------*/
+.main{
+    margin-top:200px;
+    text-align: center;
+    color: #000000;
+}
+.head{
+    text-align: center;
+}
+.head h2{
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Estonia', cursive;
+}
+.visit{
+    text-align: center;
+    background-color: #00b3b3;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.visit h1{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.form-group{
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.date{
+    text-align: center;
+    margin-top: 10px;
+}
+.slider
+{
+       width:100%;
+       padding: 0 10px;
+       opacity: 0.7;
+       margin-top: -300px;
+}
+.carousel
+{
+       box-shadow:1px 1px 4px 1px 
+rgba(0,0,0,0.5);  
+}
+.carousel-indicators
+{
+      z-index:1 ! important;
+}
+@media only screen and (max-width:980px)
+{
+    .slider
+{
+        width:100%;
+        margin-left:0;
+}
+.head{
+    text-align: center;
+}
+.head h2{
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Estonia', cursive;
+}
+.visit{
+    text-align: center;
+    background-color: #00b3b3;
+    
+    width: 90%;
+}
+.visit h1{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.form-group{
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.date2{
+    margin-top: 10px;
+}
+}
+/*----------------------content-----*/
+.font-weight-bold{
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #e6ffff;
+}
+.row h1{
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+/*----------place------*/
+#tour{
+    width: 100%;
+    height: 350px;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+.head1{
+    margin-top: 10px;
+    background-color: #e6ffff;
+}
+.head1 h1{
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+}
+.btn-light{
+    margin-top:50px;
+    width: 50%;
+    background-color: #00b3b3;
+    margin-left:25%;
+}
+.fa-coffee{
+    width:10px;
+    height: 20px;
+    margin-left: 45%;
+    }
+.fa-hotel{
+    width:10px;
+    height: 20px;
+    margin-left: 45%;
+}
+.fa-location-arrow{
+    width:10px;
+    height: 20px;
+    margin-left: 45%;
+}
+.fa-shopping-cart{
+    width:10px;
+    height: 20px;
+    margin-left: 45%;
+}
+@media only screen and (max-width:980px){
+    #tour{
+    width: 100%;
+    height: 500px;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+    .btn-light{
+        margin-top: 20px;
+        margin-left: 25%;
+}
+.fa-coffee{
+    width:10px;
+    height: 20px;
+    margin-left: 45%;
+    }
+.fa-hotel{
+    width:10px;
+    height: 20px;
+    margin-left: 45%;
+}
+.fa-location-arrow{
+    width:10px;
+    height: 20px;
+    margin-left: 45%;
+}
+.fa-shopping-cart{
+    width:10px;
+    height: 20px;
+    margin-left: 45%;
+}
+}
+/*------about-----*/
+#about{
+    height: 800px;
+    width:80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#about h1{
+    text-align: center;
+    background-color: #e6ffff;
+    font-size: 30px;
+}
+#about h2{
+    text-align: center;
+    font-size: 20px;
+}
+@media only screen and (max-width:980px){
+    #about h2{
+    text-align: center;
+    font-size: 15px;
+}
+#about{
+    height: 1200px;
+    width:100%;
+}
+}
+/*---------contact--------*/
+#contact{
+    height: 320px;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+    background-color: #00b3b3;
+    text-align: center;
+}
+#contact h1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #e6ffff;
+}
+#contact .form-group{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#enquiry{
+    height: 50px;
+}
+@media only screen and (max-width:980px){
+    #contact{
+        width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+</style>
+<body>
+       <div class="top-nav-bar">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHWA81Arx5ho9PBOiKMolIdmU8HhRDPCJ41g&usqp=CAU" class="logo">
+    
+  <div class="menu-bar">
+   <ul>
+  <li><a href="#">home</a></li>
+  <li><a href="#content">tour</a></li>
+  <li><a href="#about">about</a></li>
+  <li><a href="#contact">contact</a></li>
+</ul>
+</div>
+</div>
+<!----------------------slider------>
+        <section class="header">
+            <div class="main">
+                <h1>EXPLORE AMAZING CITY</h1>
+            </div>
+      <div class="slider">
+         <div id="slider"   
+class="carousel slide carousel-fade" data-
+ride="carousel">
+        <div class="carousel-inner"> 
+     <div class="carousel-item active"> 
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzATpL-fvlThXychZnJzWjSwhTX2CWEZLqFg&usqp=CAU" class="d-block w-100" height="70%"> 
+     </div> 
+     <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUO5Bynj3a3KJ0Ok1ff9wORWdXdbDCRqhNQ&usqp=CAU" class="d-block w-100" height="70%"> 
+</div> 
+      <div class="carousel-item">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaczuqx2q48c_0vMsHpsaXyU_X8I3woPdAbg&usqp=CAU" class="d-block w-100" height="70%"> 
+   </div>
+      <div class="carousel-item">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVR6rYWH5Ipz4p3K--YG4Om9dAZGM7DphC5Q&usqp=CAU" class="d-block w-100" height="70%"> 
+   </div>
+   <h1>fyuuu</h1>
+   </div>
+ <ol class="carousel-indicators">
+  <li data-target="#slider" 
+data-slide-to="0" class="active">
+    </li> 
+  <li data-target="#slider" 
+data-slide-to="1">
+  </li> 
+<li data-target="#slider" 
+data-slide-to="2">
+      </li> 
+<li data-target="#slider" 
+data-slide-to="3">
+      </li> 
+</ol>
+</div>
+</div>
+<div class="head">
+    <h2>find best places to stay, eat, shop or visit from local experts</h2>
+</div>
+<div class="visit">
+    <h1>where you want to go?</h1>
+    <form>
+  <div class="form-group">
+  <!---- <label for="place">where to go?</label>---->
+    <input type="where to go?" class="form-control" id="example" aria-describedby="example" placeholder="where to go?">
+  </div>
+  <div class="form-group">
+  <!---- <label for="Select">Travel Type</label>---->
+    <select class="form-control" id="Select">
+        <option value="" disabled selected hidden>Travel type</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <!----   <label for="date">Date</label>-->
+    <div class="date">
+                Date:     
+    <input type="text" placeholder="MM/DD/YYYY" onfocus="(this.type='date')"> 
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
+</form>
+</div>
+</section>
+<!----------------------content----->
+<section class="content">
+    <div id="content">
+    <div class="container-fluid">
+     <div class="row">
+       <div class="col-md-10 col-11 mx-auto">
+         <div class="row mt-5 gx-3">
+            <!---- tour ------->   
+         <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+        <div class="card p-4">
+           <h2 class="py-4 font-weight-bold">Tourism spot</h2>
+             <div class="row">
+               <!------ images------>
+              <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQAi4VDcZZyDpQ2V68zT1TrodGCl6Aosnd-w&usqp=CAU" class="img-fluid" alt="cart img">               
+                </div>        
+        <!-----detail ---->
+                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                 <div class="row">
+            <h1>Tourism is vital for the success of many economies around the world. There are several benefits of tourism on host destinations. Tourism boosts the revenue of the economy, creates thousands of jobs, develops the infrastructures of a country, and plants a sense of cultural exchange between foreigners and citizens.</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr/>
+         <!----- tour ----->
+         <div class="card p-4">
+            <div class="row">
+              <!------images------>
+             <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Z4gU7xL6dsui-rGyAKR-c_fn3SKoCCq68w&usqp=CAU" class="img-fluid" alt="cart img">               
+               </div>        
+       <!-----detail ---->
+               <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                <div class="row">
+            <h1>Tourism is vital for the success of many economies around the world. There are several benefits of tourism on host destinations. Tourism boosts the revenue of the economy, creates thousands of jobs, develops the infrastructures of a country, and plants a sense of cultural exchange between foreigners and citizens.</h1>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <hr/>
+           <!----- tour ----->
+         <div class="card p-4">
+            <div class="row">
+              <!------images------>
+             <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMIDiQE9xAQ5Rhlxlz2YuDyYlSfEMuQ_tRXw&usqp=CAU" class="img-fluid" alt="cart img">               
+               </div>        
+       <!-----detail ---->
+               <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                <div class="row">
+            <h1>Tourism is vital for the success of many economies around the world. There are several benefits of tourism on host destinations. Tourism boosts the revenue of the economy, creates thousands of jobs, develops the infrastructures of a country, and plants a sense of cultural exchange between foreigners and citizens.</h1>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <hr/>
+           <!----- tour ----->
+         <div class="card p-4">
+            <div class="row">
+              <!------images------>
+             <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxAhMGoi6YIikwTByYMkf6dJQi98Sc8A9_Kw&usqp=CAU" class="img-fluid" alt="cart img">               
+               </div>        
+       <!-----detail---->
+               <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                <div class="row">
+            <h1>Tourism is vital for the success of many economies around the world. There are several benefits of tourism on host destinations. Tourism boosts the revenue of the economy, creates thousands of jobs, develops the infrastructures of a country, and plants a sense of cultural exchange between foreigners and citizens.</h1>
+                 </div>
+               </div>
+             </div>
+           </div>
+           </div>
+    </div>
+</section>
+<!----------place------>
+<section class="place">
+    <div id="tour">
+        <div class="head1">
+            <h1>Browse the highlights</h1>
+        </div>
+        <button class="btn btn-light my-sm-0" type="submit"> Restaurant <span class="input-group-text">
+        <i class="fa fa-coffee"></i></span></button>
+        <button class="btn btn-light my-sm-0" type="submit"> Hotels <span class="input-group-text">
+        <i class="fa fa-hotel"></i></span></button>
+        <button class="btn btn-light my-sm-0" type="submit"> Places <span class="input-group-text">        
+        <i class="fa fa-location-arrow"></i></span></button>
+        <button class="btn btn-light my-sm-0" type="submit"> Shopping <span class="input-group-text">        
+        <i class="fa fa-shopping-cart"></i></span></button>
+    </div>
+</section>
+<!--------about------>
+<section class="about">
+    <div id="about">
+        <h1>About Us</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwja8OloBbh4qBR-Fa4tyxVasPc9bp27X-KQ&usqp=CAU" alt="First slide" height="50%">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyH-XBNHG80suLHX2gRKqkGZ_LB0u2PHab3g&usqp=CAU" alt="Second slide" height="50%">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27ZkZVnVRmvhrNnDPOB6STw0TrkJUAOT3wA&usqp=CAU" alt="Third slide" height="50%">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzm4POOrtrUcrTemRDAT1RcK9_v0J48Gv5w&usqp=CAU" alt="fourth slide" height="50%">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        <h2>Tourism is travel for pleasure or business; also the theory and practice of touring, the business of attracting, accommodating, and entertaining tourists, and the business
+             of operating tours.[2] The World Tourism Organization defines tourism more generally, in terms which go "beyond the common perception of tourism as being limited to 
+             holiday activity only", as people "traveling to and staying in places outside their usual environment for not more than one consecutive year for leisure and not less
+             than 24 hours, business and other purposes".[3] Tourism can be domestic (within the traveller's own country) or international, and international tourism has both
+             incoming and outgoing implications on a country's balance of payments.
+        
+        Tourism numbers declined as a result of a strong economic slowdown (the late-2000s recession) between the second half of 2008 and the end of 2009, and in consequence of 
+        the outbreak of the 2009 H1N1 influenza virus,[4][5] but slowly recovered until the COVID-19 pandemic put an abrupt end to the growth. The United Nations World Tourism 
+        Organization estimated that global international tourist arrivals might decrease by 58% to 78% in 2020, leading to a potential loss of US$0.9–1.2 trillion in international 
+        tourism receipts.[6]
+
+        Globally, international tourism receipts (the travel item in balance of payments) grew to US$1.03 trillion (€740 billion) in 2005, corresponding to an increase in real terms of 3.8% 
+         from 2010.[7] International tourist arrivals surpassed the milestone of 1 billion tourists globally for the first time in 2012,[8] emerging source markets such as China, Russia, and 
+         Brazil had significantly increased their spending over the previous decade.[9]
+
+        Global tourism accounts for c. 8% of global greenhouse-gas emissions.[10] Emissions as well as other significant environmental and social impacts that are not always beneficial to 
+         local communities and their economies. For this reason, many tourist development organizations have begun to focus on sustainable tourism in order to mitigate negative effects 
+         caused by the growing impact of tourism. The United Nations World Tourism Organization emphasized these practices by promoting tourism as part of the Sustainable Development Goals, 
+         through programs like the International Year for Sustainable Tourism for Development in 2017,[11] and programs like Tourism for SDGs focusing on how SDG 8, SDG 12 and SDG 14 
+         implicate tourism in creating a sustainable economy.[12]</h2>
+    </div>
+</section>
+<!------contact-------->
+<section class="con">
+    <div id="contact">
+        <h1>Contact Us</h1>
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="enquiry">Enquiry</label>
+    <input type="enquiry" class="form-control" id="enquiry" placeholder="Enquiry">
+  </div>
+  <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+    </div>
+</section>
+</body>
+</html>
